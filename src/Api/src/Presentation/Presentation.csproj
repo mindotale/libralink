@@ -4,6 +4,8 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	  <RootNamespace>Libralink.Presentation</RootNamespace>
+	  <AssemblyName>Libralink.Presentation</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
