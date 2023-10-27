@@ -9,13 +9,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Folder Include="Authors\" />
-	  <Folder Include="Books\" />
-	  <Folder Include="Genres\" />
-	  <Folder Include="Publishers\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <ProjectReference Include="..\Domain\Domain.csproj" />
 	</ItemGroup>
 
