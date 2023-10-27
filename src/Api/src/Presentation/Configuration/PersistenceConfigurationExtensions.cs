@@ -18,7 +18,7 @@ public static class PersistenceConfigurationExtensions
         services.AddDbContext<ApplicationDbContext>(
             options =>
             {
-                var connectionString = configuration.GetConnectionString("Postgres:ConnectionString");
+                var connectionString = configuration.GetValue<string>("Postgres:ConnectionString")!;
                 options.UseNpgsql(connectionString);
             });
 
