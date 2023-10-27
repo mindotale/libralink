@@ -1,0 +1,14 @@
+version: '3.8'
+
+name: graphql-api
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: my-postgres
+    environment:
+      POSTGRES_DB: Libralink
+      POSTGRES_USER: sa
+      POSTGRES_PASSWORD: Password!
+    ports:
+      - "5432:5432"
