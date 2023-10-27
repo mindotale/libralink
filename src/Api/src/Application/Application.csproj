@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>Libralink.Application</RootNamespace>
+		<AssemblyName>Libralink.Application</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Folder Include="Authors\" />
+	  <Folder Include="Books\" />
+	  <Folder Include="Genres\" />
+	  <Folder Include="Publishers\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Domain\Domain.csproj" />
+	</ItemGroup>
+
+</Project>
