@@ -20,6 +20,7 @@ public static class PersistenceConfigurationExtensions
             {
                 var connectionString = configuration.GetValue<string>("Postgres:ConnectionString")!;
                 options.UseNpgsql(connectionString);
+                options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             });
 
         return services;
