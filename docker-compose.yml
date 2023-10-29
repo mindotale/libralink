@@ -29,3 +29,13 @@ services:
     ports:
       - "${PGADMIN_PORT:-5050}:80"
     restart: unless-stopped
+
+  presentation:
+    restart: on-failure
+    image: ${DOCKER_REGISTRY-}presentation
+    build:
+      context: .
+      dockerfile: src/Api/src/Presentation/Dockerfile
+    ports:
+      - "5014:80"
+      - "5015:443"

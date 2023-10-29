@@ -6,6 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
 	  <RootNamespace>Libralink.Presentation</RootNamespace>
 	  <AssemblyName>Libralink.Presentation</AssemblyName>
+	  <UserSecretsId>6c4a19da-fbd4-49a3-b200-9fdfc8f941b1</UserSecretsId>
+	  <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	  <DockerfileContext>..\..\..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +17,7 @@
 	    <PrivateAssets>all</PrivateAssets>
 	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
   </ItemGroup>
 
   <ItemGroup>
